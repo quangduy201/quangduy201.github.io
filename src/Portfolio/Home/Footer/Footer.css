@@ -1,0 +1,53 @@
+.footer-container {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-parent {
+  height: 100%;
+  width: 100%;
+  max-width: 1920px;
+}
+
+.footer-parent img {
+  max-width: 100%;
+  height: 130px;
+}
+
+@media only screen and (max-width: 1030px) {
+  .footer-parent img {
+    max-width: 125%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .footer-parent img {
+    max-width: 150%;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  .footer-parent img {
+    max-width: 175%;
+  }
+}
+
+@media only screen and (max-width: 590px) {
+  .footer-parent img {
+    max-width: 200%;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .footer-parent img {
+    max-width: 250%;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  .footer-parent img {
+    max-width: 300%;
+  }
+}
