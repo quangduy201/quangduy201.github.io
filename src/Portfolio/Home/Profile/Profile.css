@@ -15,7 +15,7 @@
 
 .profile-details-name {
   font-size: 3.125rem;
-  font-family: "Poppins SemiBold";
+  font-family: "Poppins Bold";
 }
 
 .profile-details-role {
@@ -26,7 +26,8 @@
 
 .profile-details-role div {
   font-size: 1.6rem;
-  font-family: cursive;
+  font-family: "Poppins Medium";
+  font-style: italic;
   height: 100px;
 }
 
@@ -80,7 +81,7 @@
 }
 
 .colz .colz-icon i {
-  font-size: 1.5rem;
+  font-size: 24px;
   color: white;
   padding: 5px;
   transition: 0.1s;
@@ -114,10 +115,6 @@
 }
 
 @media only screen and (max-width: 850px) {
-  .profile-container {
-    gap: 10px;
-  }
-
   .profile-picture {
     width: 240px;
     height: 240px;
@@ -143,7 +140,7 @@
   }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (orientation: portrait) {
   .profile-container {
     flex-direction: column-reverse;
   }

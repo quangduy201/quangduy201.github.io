@@ -3,6 +3,23 @@ import { TypeAnimation } from "react-type-animation";
 import "./Profile.css";
 
 const Profile = () => {
+  const socialData = [
+    { link: "https://github.com/quangduy201", icon: "github" },
+    { link: "https://www.linkedin.com/in/quangduy201/", icon: "linkedin-square" },
+    { link: "https://www.instagram.com/quangduy201/", icon: "instagram" },
+    { link: "https://www.facebook.com/quangduy201", icon: "facebook-square" },
+    { link: "https://www.youtube.com/@quangduy201", icon: "youtube-play" }
+  ];
+
+  const introduction = [
+    "A passionate developer crafting digital experiences", 2000,
+    "A flexible programmer pushing the boundaries of possibility", 2000,
+    "A curious learner exploring the frontiers of development", 2000,
+    "An adaptable enthusiast embracing the art of coding", 2000,
+    "A dedicated coder creating elegant solutions", 2000,
+    "An innovative coder building the future of technology", 2000
+  ];
+
   const startingYear = 2021;
   const workingYears = new Date().getFullYear() - startingYear;
 
@@ -12,41 +29,18 @@ const Profile = () => {
         <div className="profile-details">
           <div className="colz">
             <div className="colz-icon">
-              <a
-                href="https://github.com/quangduy201"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fa fa-github"></i>
-              </a>
-              <a
-                href="https://www.linkedin.com/in/quangduy201/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fa fa-linkedin-square"></i>
-              </a>
-              <a
-                href="https://www.instagram.com/quangduy201/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fa fa-instagram"></i>
-              </a>
-              <a
-                href="https://www.facebook.com/quangduy201"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fa fa-facebook-square"></i>
-              </a>
-              <a
-                href="https://www.youtube.com/@quangduy201"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fa fa-youtube-play"></i>
-              </a>
+              {socialData.map((item, index) => {
+                return (
+                  <a
+                    key={index}
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className={`fa fa-${item.icon}`}></i>
+                  </a>
+                );
+              })}
             </div>
           </div>
         </div>
@@ -59,20 +53,7 @@ const Profile = () => {
           <span className="primary-text">
             <div className="text-animation">
               <TypeAnimation
-                sequence={[
-                  "A passionate developer crafting digital experiences",
-                  2000,
-                  "A flexible programmer pushing the boundaries of possibility",
-                  2000,
-                  "A curious learner exploring the frontiers of development",
-                  2000,
-                  "An adaptable enthusiast embracing the art of coding",
-                  2000,
-                  "A dedicated coder creating elegant solutions",
-                  2000,
-                  "An innovative coder building the future of technology",
-                  2000,
-                ]}
+                sequence={introduction}
                 speed={65}
                 repeat={Infinity}
               />

@@ -4,22 +4,10 @@ import "./NavBar.css";
 
 const NavBar = () => {
   const menuData = [
-    {
-      title: "Home",
-      id: "home",
-    },
-    {
-      title: "About",
-      id: "about",
-    },
-    {
-      title: "Projects",
-      id: "projects",
-    },
-    {
-      title: "Contact",
-      id: "contact",
-    },
+    { title: "Home", id: "home" },
+    { title: "About", id: "about" },
+    { title: "Projects", id: "projects" },
+    { title: "Contact", id: "contact" }
   ];
 
   const [isScrolled, setIsScrolled] = useState(false);
@@ -79,7 +67,7 @@ const NavBar = () => {
             {menuData.map((item, index) => {
               return (
                 <li key={index}>
-                  <Link to={item.id} smooth={'easeInOutQuad'} duration={1000} offset={-80}>
+                  <Link to={item.id} smooth={'easeInOutQuad'} duration={1000} offset={-65}>
                     {item.title}
                   </Link>
                 </li>
@@ -100,7 +88,7 @@ const NavBar = () => {
           {menuData.map((item, index) => {
             return (
               <div key={index}>
-                <Link to={item.id} smooth={'easeInOutQuad'} duration={1000} offset={-80} onClick={updateMenu} >
+                <Link to={item.id} smooth={'easeInOutQuad'} duration={1000} offset={-65} onClick={updateMenu}>
                   {item.title}
                 </Link>
               </div>
