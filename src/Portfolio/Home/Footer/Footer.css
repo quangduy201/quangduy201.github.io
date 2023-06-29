@@ -1,4 +1,4 @@
-.shape-divider {
+.curve-divider {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -8,37 +8,37 @@
   transform: rotate(180deg);
 }
 
-.shape-divider svg {
+.curve-divider svg {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
   height: 80px;
 }
 
-.shape-divider .shape-fill {
+.curve-divider .shape-fill {
   fill: #FFFFFF;
 }
 
 @media only screen and (max-width: 1030px) {
-  .shape-divider svg {
+  .curve-divider svg {
     height: 70px;
   }
 }
 
 @media only screen and (max-width: 850px) {
-  .shape-divider svg {
+  .curve-divider svg {
     height: 60px;
   }
 }
 
 @media only screen and (max-width: 700px) {
-  .shape-divider svg {
+  .curve-divider svg {
     height: 50px;
   }
 }
 
 @media only screen and (max-width: 550px) {
-  .shape-divider svg {
+  .curve-divider svg {
     height: 40px;
   }
 }

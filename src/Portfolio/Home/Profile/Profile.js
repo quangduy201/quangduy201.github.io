@@ -78,7 +78,6 @@ const Profile = () => {
               />
             </div>
             <span className="profile-role-tagline">
-              {/* I'm currently opened for work. */}
               {`${workingYears} years of working experience.`}
             </span>
           </span>
