@@ -1,20 +1,8 @@
 .home {
-  padding-top: 80px;
+  position: relative;
+  padding: 80px 0px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-color: #24263b;
-  min-height: 600px;
-}
-
-@media only screen and (max-width: 850px) {
-  .home {
-    min-height: 550px;
-  }
-}
-
-@media only screen and (max-width: 700px) {
-  .home {
-    min-height: 480px;
-  }
 }

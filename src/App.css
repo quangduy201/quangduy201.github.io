@@ -35,7 +35,6 @@ html {
   color: #24263b;
   text-align: center;
   position: relative;
-  z-index: 999;
 }
 
 .heading.heading-about::before {

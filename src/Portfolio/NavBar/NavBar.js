@@ -23,7 +23,32 @@ const NavBar = () => {
   ];
 
   const [isScrolled, setIsScrolled] = useState(false);
-  // cosnt [isClicked, setIsClicked] = useState(false);
+  const [burger_class, setBurgerClass] = useState("burger-bar unclicked");
+  const [menu_class, setMenuClass] = useState("menu hidden");
+  const [wrapper_class, setWrapperClass] = useState("wrapper hidden");
+  const [isMenuClicked, setIsMenuClicked] = useState(false);
+
+  const closeMenu = () => {
+    setBurgerClass("burger-bar unclicked");
+    setMenuClass("menu hidden");
+    setWrapperClass("wrapper hidden")
+    setIsMenuClicked(false);
+  };
+
+  const openMenu = () => {
+    setBurgerClass("burger-bar clicked");
+    setMenuClass("menu visible");
+    setWrapperClass("wrapper visible")
+    setIsMenuClicked(true);
+  };
+
+  const updateMenu = () => {
+    if (isMenuClicked) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -62,10 +87,28 @@ const NavBar = () => {
             })}
           </ul>
         </div>
+        <div className="mobile">
+          <div className="burger-menu" onClick={updateMenu}>
+            <div className={burger_class}></div>
+            <div className={burger_class}></div>
+            <div className={burger_class}></div>
+          </div>
+        </div>
       </div>
-      <div className="mobile">
-        {/* <i className={}></i> */}
+      <div className={menu_class} onTouchMove={closeMenu}>
+        <ul className="menu-links">
+          {menuData.map((item, index) => {
+            return (
+              <div key={index}>
+                <Link to={item.id} smooth={'easeInOutQuad'} duration={1000} offset={-80} onClick={updateMenu} >
+                  {item.title}
+                </Link>
+              </div>
+            );
+          })}
+        </ul>
       </div>
+      <div className={wrapper_class} onClick={closeMenu} onTouchMove={closeMenu}></div>
     </nav>
   );
 };
