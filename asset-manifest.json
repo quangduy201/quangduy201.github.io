@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.6dc83ab2.css",
-    "main.js": "/static/js/main.83d849c3.js",
+    "main.css": "/static/css/main.de3f14da.css",
+    "main.js": "/static/js/main.b2e82f4f.js",
     "static/js/787.0200ed91.chunk.js": "/static/js/787.0200ed91.chunk.js",
     "static/media/profile_picture.jpg": "/static/media/profile_picture.d027622733cfa6529621.jpg",
     "static/media/Poppins-Thin.ttf": "/static/media/Poppins-Thin.a61eaf4c2e4d44d6db6a.ttf",
@@ -12,12 +12,12 @@
     "static/media/Poppins-Bold.ttf": "/static/media/Poppins-Bold.404e299be26d78e66794.ttf",
     "static/media/Poppins-ExtraBold.ttf": "/static/media/Poppins-ExtraBold.4ed78cd5d64af4efc3c7.ttf",
     "index.html": "/index.html",
-    "main.6dc83ab2.css.map": "/static/css/main.6dc83ab2.css.map",
-    "main.83d849c3.js.map": "/static/js/main.83d849c3.js.map",
+    "main.de3f14da.css.map": "/static/css/main.de3f14da.css.map",
+    "main.b2e82f4f.js.map": "/static/js/main.b2e82f4f.js.map",
     "787.0200ed91.chunk.js.map": "/static/js/787.0200ed91.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6dc83ab2.css",
-    "static/js/main.83d849c3.js"
+    "static/css/main.de3f14da.css",
+    "static/js/main.b2e82f4f.js"
   ]
 }
