@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.5813b3d6.css",
-    "main.js": "/static/js/main.504dfc1e.js",
-    "static/js/787.0200ed91.chunk.js": "/static/js/787.0200ed91.chunk.js",
-    "static/media/profile_picture.jpg": "/static/media/profile_picture.d027622733cfa6529621.jpg",
-    "static/media/Poppins-Thin.ttf": "/static/media/Poppins-Thin.a61eaf4c2e4d44d6db6a.ttf",
-    "static/media/Poppins-Light.ttf": "/static/media/Poppins-Light.f41b63c0bb0963ace821.ttf",
-    "static/media/Poppins-Regular.ttf": "/static/media/Poppins-Regular.8081832fc5cfbf634aa6.ttf",
-    "static/media/Poppins-Medium.ttf": "/static/media/Poppins-Medium.9e1bb626874ed49aa343.ttf",
-    "static/media/Poppins-SemiBold.ttf": "/static/media/Poppins-SemiBold.cce5625b56ec678e4202.ttf",
-    "static/media/Poppins-Bold.ttf": "/static/media/Poppins-Bold.404e299be26d78e66794.ttf",
-    "static/media/Poppins-ExtraBold.ttf": "/static/media/Poppins-ExtraBold.4ed78cd5d64af4efc3c7.ttf",
-    "index.html": "/index.html",
-    "main.5813b3d6.css.map": "/static/css/main.5813b3d6.css.map",
-    "main.504dfc1e.js.map": "/static/js/main.504dfc1e.js.map",
-    "787.0200ed91.chunk.js.map": "/static/js/787.0200ed91.chunk.js.map"
+    "main.css": "/quangduy201/quangduy201.github.io/static/css/main.d594bd91.css",
+    "main.js": "/quangduy201/quangduy201.github.io/static/js/main.d6158f69.js",
+    "static/js/787.0200ed91.chunk.js": "/quangduy201/quangduy201.github.io/static/js/787.0200ed91.chunk.js",
+    "static/media/profile_picture.jpg": "/quangduy201/quangduy201.github.io/static/media/profile_picture.d027622733cfa6529621.jpg",
+    "static/media/Poppins-Thin.ttf": "/quangduy201/quangduy201.github.io/static/media/Poppins-Thin.a61eaf4c2e4d44d6db6a.ttf",
+    "static/media/Poppins-Light.ttf": "/quangduy201/quangduy201.github.io/static/media/Poppins-Light.f41b63c0bb0963ace821.ttf",
+    "static/media/Poppins-Regular.ttf": "/quangduy201/quangduy201.github.io/static/media/Poppins-Regular.8081832fc5cfbf634aa6.ttf",
+    "static/media/Poppins-Medium.ttf": "/quangduy201/quangduy201.github.io/static/media/Poppins-Medium.9e1bb626874ed49aa343.ttf",
+    "static/media/Poppins-SemiBold.ttf": "/quangduy201/quangduy201.github.io/static/media/Poppins-SemiBold.cce5625b56ec678e4202.ttf",
+    "static/media/Poppins-Bold.ttf": "/quangduy201/quangduy201.github.io/static/media/Poppins-Bold.404e299be26d78e66794.ttf",
+    "static/media/Poppins-ExtraBold.ttf": "/quangduy201/quangduy201.github.io/static/media/Poppins-ExtraBold.4ed78cd5d64af4efc3c7.ttf",
+    "index.html": "/quangduy201/quangduy201.github.io/index.html",
+    "main.d594bd91.css.map": "/quangduy201/quangduy201.github.io/static/css/main.d594bd91.css.map",
+    "main.d6158f69.js.map": "/quangduy201/quangduy201.github.io/static/js/main.d6158f69.js.map",
+    "787.0200ed91.chunk.js.map": "/quangduy201/quangduy201.github.io/static/js/787.0200ed91.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5813b3d6.css",
-    "static/js/main.504dfc1e.js"
+    "static/css/main.d594bd91.css",
+    "static/js/main.d6158f69.js"
   ]
 }
