@@ -1,0 +1,12 @@
+.copyright {
+  display: flex;
+  flex-direction: column;
+  background-color: #303042;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyright p {
+  margin: 5px 0px;
+}

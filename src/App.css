@@ -19,69 +19,65 @@
   --loader-color: #0cbfae;
 }
 
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
+#root {
+  background-color: #ffffff;
 }
 
-html, body {
-  font-size: 100%;
-  overflow-x: hidden;
-  overflow-y: var(--black);
+body {
+  background-color: #303042;
 }
 
-.heading {
-  margin: 10px;
-  font-family: "Poppins Bold";
-  color: #24263b;
-  text-align: center;
-  position: relative;
+.btn {
+  border-radius: 50px;
+  padding: 14px 0;
+  width: 160px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-family: "Poppins SemiBold";
 }
 
-.heading.heading-about::before {
-  content: "About Me";
+.btn:active {
+  transform: translateY(2px);
 }
 
-.heading.heading-projects::before {
-  content: "Projects";
+.primary-btn {
+  color: var(--white);
+  border: 2px solid linen;
+  font-size: 12px;
+  background-color: #1f2235;
 }
 
-.heading.heading-contact::before {
-  content: "Contact Me";
-}
-
-.heading::before {
-  position: absolute;
-  transform: translate3d(5px, 2px, 0px) perspective(100px);
-  color: #24263b30;
-}
-
-.heading::after {
-  content: "";
-  position: absolute;
-  bottom: -8px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 20%;
-  height: 2px;
-  background-color: #24263b;
-}
-
-/* @media only screen and (max-width: 1000px) {
-  html {
-    font-size: 81.25%;
+/* @media only screen and (max-width: 414px) {
+  .primary-btn {
+    font-size: 13px;
   }
 } */
 
-@media only screen and (max-width: 700px) {
-  html {
-    font-size: 62.5%;
+.primary-btn:hover {
+  color: aliceblue;
+  border: 2px solid #ff5823;
+  background-color: #1f2235;
+}
+
+.highlighted-btn {
+  color: var(--white);
+
+  font-size: 12px;
+  background-color: #ff5823;
+}
+
+@media only screen and (max-width: 568px) {
+  .highlighted-btn {
+    z-index: -900;
   }
 }
 
-/* @media only screen and (max-width: 400px) {
-  html {
-    font-size: 43.75%;
-  }
-} */
+.red-border {
+  border: 1px solid var(--error-message) !important;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(80px);
+  transition: all 0.8s ease;
+}

@@ -1,0 +1,36 @@
+.heading {
+  margin: 10px;
+  font-family: "Poppins Bold";
+  color: #24263b;
+  text-align: center;
+  position: relative;
+}
+
+.heading.heading-about::before {
+  content: "About Me";
+}
+
+.heading.heading-projects::before {
+  content: "Projects";
+}
+
+.heading.heading-contact::before {
+  content: "Contact Me";
+}
+
+.heading::before {
+  position: absolute;
+  transform: translate3d(5px, 2px, 0px) perspective(100px);
+  color: #24263b30;
+}
+
+.heading::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150%;
+  height: 2px;
+  background-color: #24263b;
+}
