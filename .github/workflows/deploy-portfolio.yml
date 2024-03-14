@@ -1,0 +1,31 @@
+name: Deploy React Portfolio
+
+on:
+  push:
+    branches:
+      - reactjs
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3  # Checkout the code from the repository
+
+      - name: Use Node.js 16
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build the React app
+        run: REACT_APP_FORM_ENDPOINT=${{ secrets.REACT_APP_FORM_ENDPOINT }} npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3  # Use the gh-pages action
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}  # Access token with push to gh-pages permission
+          publish_dir: ./build  # The build output directory
+          branch: main  # Deploy to the main branch

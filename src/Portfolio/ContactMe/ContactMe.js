@@ -1,8 +1,11 @@
 import React, {useState} from "react";
 import "./ContactMe.css"
 import {Button, Form} from "react-bootstrap";
+import {FORM_ENDPOINT} from "../../utils/config";
 
 const ContactMe = () => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submit, setSubmit] = useState("Send");
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -17,15 +20,36 @@ const ContactMe = () => {
     });
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    setFormData({
-      name: "",
-      email: "",
-      subject: "",
-      message: ""
-    });
+    if (isSubmitting)
+      return;
+    setIsSubmitting(true);
+    setSubmit("Sending...");
+    try {
+      const response = await fetch(FORM_ENDPOINT, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded"
+        },
+        body: new URLSearchParams(formData).toString()
+      });
+
+      if (response.ok) {
+        setSubmit("Thank you!");
+        setFormData({
+          name: "",
+          email: "",
+          subject: "",
+          message: ""
+        });
+      } else {
+        setSubmit("Send again")
+      }
+    } catch (error) {
+      setSubmit("Send again")
+    }
+    setIsSubmitting(false);
   };
 
   return (
@@ -79,8 +103,14 @@ const ContactMe = () => {
             onChange={handleChange}
             required/>
         </Form.Group>
-
-        <Button variant={"outline-dark"}>Send</Button>
+        <span className={"submit-message"}>{submit === "Send again" ? "Please try again later" : ""}</span>
+        <Button
+            variant={"outline-dark"}
+            type={"submit"}
+            disabled={isSubmitting || submit === "Thank you!"}
+        >
+          {submit}
+        </Button>
       </Form>
     </section>
   );

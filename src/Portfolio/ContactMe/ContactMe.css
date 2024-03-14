@@ -35,6 +35,10 @@
   border-color: #3f415c;
 }
 
+.submit-message {
+  color: red;
+}
+
 @media only screen and (max-width: 800px) {
   .contact form {
     width: 60%;
