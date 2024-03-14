@@ -1,6 +1,7 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import "./Profile.css";
+import profileImage from "../../../assets/images/profile_picture.jpg"
 
 const Profile = () => {
   const socialData = [
@@ -59,7 +60,7 @@ const Profile = () => {
               />
             </div>
             <span className="profile-role-tagline">
-              {`${workingYears} years of working experience.`}
+              {workingYears} years of working experience.
             </span>
           </span>
         </div>
@@ -73,7 +74,9 @@ const Profile = () => {
         </div>
       </div>
       <div className="profile-picture">
-        <div className="profile-picture-background"></div>
+        <div className="profile-picture-background">
+          <img src={profileImage} alt="Quang Duy - Full Stack Developer" />
+        </div>
       </div>
     </div>
   );

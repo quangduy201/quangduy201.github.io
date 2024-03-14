@@ -64,18 +64,15 @@
   width: 380px;
 }
 
-.profile-picture-background {
+.profile-picture-background img {
   height: 92%;
   width: 92%;
+  object-fit: cover;
   border-radius: 50%;
-  background: url("../../../assets/images/profile_picture.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   transition: 0.3s;
 }
 
-.profile-picture-background:hover {
+.profile-picture-background img:hover {
   transform: scale(1.07);
 }
 
