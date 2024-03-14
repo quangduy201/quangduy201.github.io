@@ -24,8 +24,8 @@ jobs:
         run: REACT_APP_FORM_ENDPOINT=${{ secrets.REACT_APP_FORM_ENDPOINT }} npm run build
 
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v4.0.4  # Use the actions/deploy-pages action
+        uses: peaceiris/actions-gh-pages@v3  # Use the actions/deploy-pages action
         with:
-          token: ${{ secrets.DEPLOY_KEY }}
-          source: ./build
-          branch: main
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
+          publish_branch: main
