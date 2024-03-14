@@ -26,6 +26,6 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4.0.4  # Use the actions/deploy-pages action
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          {{ secrets.DEPLOY_KEY }}: ${{ secrets.DEPLOY_KEY }}
           source: ./build
           branch: main
